@@ -12,22 +12,39 @@ A WordPress plugin to display detailed technical metrics about your site, includ
 
 == Description ==
 
-**WP Tech Metrics** is a developer-focused WordPress plugin that provides comprehensive technical metrics about your site. It includes detailed information about:
-
-- Active and inactive plugins, their size, and update availability.
-- Active and inactive themes, including their size and version.
-- Media library insights, such as total size, file count, and largest files.
-- Database metrics, including table sizes and total database size.
-- System information, such as PHP version, memory limit, server type, and disk space.
-
-Additionally, it provides the ability to export data as CSV files for deeper analysis or archiving.
+**WP Tech Metrics** provides a centralized dashboard with technical insights about your WordPress site. Designed for developers and administrators, this plugin helps you understand your site’s structure and optimize its performance. 
 
 == Features ==
 
-- Dashboard with detailed metrics across multiple categories.
-- Easy-to-read tabbed interface.
-- Export individual metrics or all metrics as CSV.
-- Supports multilingual translations for global use.
+### **Plugins**
+- Lists all plugins with details such as name, version, size, status (active/inactive), and whether updates are available.
+
+### **Themes**
+- Displays all installed themes with details such as name, version, status (active/inactive), size, and last update date.
+
+### **Media**
+- Summarizes the uploads folder with total size and file count.
+- Highlights the largest files with their sizes and file paths.
+
+### **Database**
+- Shows detailed database metrics, including the size of each table, number of rows, and total database size.
+- Includes information on the last update time for each table.
+
+### **System Information**
+- Provides system metrics such as:
+  - PHP version
+  - Memory limits
+  - Maximum upload size
+  - Server type (e.g., Apache, Nginx)
+  - WordPress version
+  - Disk space usage (total and available)
+
+### **Export Functionality**
+- Export metrics for each section (plugins, themes, media, database, system) as individual CSV files.
+- Export all collected metrics into a single comprehensive CSV file.
+
+### **Multilingual Ready**
+- Fully compatible with WordPress translation standards, allowing you to translate all plugin strings using `.po` and `.mo` files.
 
 == Installation ==
 
@@ -36,12 +53,24 @@ Additionally, it provides the ability to export data as CSV files for deeper ana
 3. Activate the plugin through the "Plugins" menu in WordPress.
 4. Access the "Tech Metrics" menu in your WordPress admin dashboard to view your site's metrics.
 
+== Frequently Asked Questions ==
+
+= What versions of WordPress and PHP does this plugin support? =
+This plugin requires at least WordPress version 6.7.1 and PHP version 7.4.
+
+= Can I export the data? =
+Yes! Each section has a dedicated export button to download metrics as a CSV file. There's also an option to export all metrics together.
+
+= How do I translate the plugin? =
+Place your `.mo` and `.po` files in the `languages` folder of the plugin. Follow WordPress localization standards for translations.
+
 == Changelog ==
 
 = 1.0.0 =
 * Initial release.
 * Provides metrics for plugins, themes, media, database, and system.
 * Export functionality for individual or all metrics as CSV.
+* Multilingual support.
 
 == Upgrade Notice ==
 
