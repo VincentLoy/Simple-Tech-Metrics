@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: includes/database-metrics.php:30 wp-tech-metrics.php:60
+#: includes/database-metrics.php:30 simple-tech-metrics.php:60
 msgid "Database"
 msgstr ""
 
@@ -45,7 +45,7 @@ msgstr ""
 msgid "N/A"
 msgstr ""
 
-#: includes/media-metrics.php:38 wp-tech-metrics.php:59
+#: includes/media-metrics.php:38 simple-tech-metrics.php:59
 msgid "Media"
 msgstr ""
 
@@ -72,7 +72,7 @@ msgstr ""
 msgid "Path"
 msgstr ""
 
-#: includes/plugins-metrics.php:37 wp-tech-metrics.php:58
+#: includes/plugins-metrics.php:37 simple-tech-metrics.php:58
 msgid "Plugins"
 msgstr ""
 
@@ -108,47 +108,47 @@ msgstr ""
 msgid "Value"
 msgstr ""
 
-#: includes/themes-metrics.php:27 wp-tech-metrics.php:57
+#: includes/themes-metrics.php:27 simple-tech-metrics.php:57
 msgid "Themes"
 msgstr ""
 
-#: wp-tech-metrics.php:44 wp-tech-metrics.php:66
+#: simple-tech-metrics.php:44 simple-tech-metrics.php:66
 msgid "Simple Tech Metrics"
 msgstr ""
 
-#: wp-tech-metrics.php:45
+#: simple-tech-metrics.php:45
 msgid "Tech Metrics"
 msgstr ""
 
-#: wp-tech-metrics.php:61
+#: simple-tech-metrics.php:61
 msgid "System"
 msgstr ""
 
-#: wp-tech-metrics.php:62
+#: simple-tech-metrics.php:62
 msgid "Tools"
 msgstr ""
 
-#: wp-tech-metrics.php:67
+#: simple-tech-metrics.php:67
 msgid "Technical metrics for your WordPress site are displayed below:"
 msgstr ""
 
-#: wp-tech-metrics.php:80
+#: simple-tech-metrics.php:80
 msgid "Export All Metrics as CSV"
 msgstr ""
 
-#: wp-tech-metrics.php:81
+#: simple-tech-metrics.php:81
 msgid "Use this tool to export all collected metrics into a single CSV file."
 msgstr ""
 
-#: wp-tech-metrics.php:83
+#: simple-tech-metrics.php:83
 #, php-format
 msgid "Export %s as CSV"
 msgstr ""
 
-#: wp-tech-metrics.php:99
+#: simple-tech-metrics.php:99
 msgid "Unauthorized user"
 msgstr ""
 
-#: wp-tech-metrics.php:106
+#: simple-tech-metrics.php:106
 msgid "Invalid export type"
 msgstr ""

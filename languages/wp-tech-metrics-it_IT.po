@@ -1,5 +1,5 @@
 # Italian translations for simple_tech_metrics package.
-# This file is distributed under the same license as the wp-tech-metrics package.
+# This file is distributed under the same license as the simple-tech-metrics package.
 # Automatically generated, 2024.
 #
 msgid ""
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: includes/database-metrics.php:30 wp-tech-metrics.php:60
+#: includes/database-metrics.php:30 simple-tech-metrics.php:60
 msgid "Database"
 msgstr "Database"
 
@@ -46,7 +46,7 @@ msgstr "Ultimo aggiornamento"
 msgid "N/A"
 msgstr "Non disponibile"
 
-#: includes/media-metrics.php:38 wp-tech-metrics.php:59
+#: includes/media-metrics.php:38 simple-tech-metrics.php:59
 msgid "Media"
 msgstr "Media"
 
@@ -73,7 +73,7 @@ msgstr "Nome"
 msgid "Path"
 msgstr "Percorso"
 
-#: includes/plugins-metrics.php:37 wp-tech-metrics.php:58
+#: includes/plugins-metrics.php:37 simple-tech-metrics.php:58
 msgid "Plugins"
 msgstr "Plugin"
 
@@ -109,47 +109,47 @@ msgstr "Metrica"
 msgid "Value"
 msgstr "Valore"
 
-#: includes/themes-metrics.php:27 wp-tech-metrics.php:57
+#: includes/themes-metrics.php:27 simple-tech-metrics.php:57
 msgid "Themes"
 msgstr "Temi"
 
-#: wp-tech-metrics.php:44 wp-tech-metrics.php:66
+#: simple-tech-metrics.php:44 simple-tech-metrics.php:66
 msgid "Simple Tech Metrics"
 msgstr "Simple Tech Metrics"
 
-#: wp-tech-metrics.php:45
+#: simple-tech-metrics.php:45
 msgid "Tech Metrics"
 msgstr "Metriche tecniche"
 
-#: wp-tech-metrics.php:61
+#: simple-tech-metrics.php:61
 msgid "System"
 msgstr "Sistema"
 
-#: wp-tech-metrics.php:62
+#: simple-tech-metrics.php:62
 msgid "Tools"
 msgstr "Strumenti"
 
-#: wp-tech-metrics.php:67
+#: simple-tech-metrics.php:67
 msgid "Technical metrics for your WordPress site are displayed below:"
 msgstr "Le metriche tecniche del tuo sito WordPress sono mostrate di seguito:"
 
-#: wp-tech-metrics.php:80
+#: simple-tech-metrics.php:80
 msgid "Export All Metrics as CSV"
 msgstr "Esporta tutte le metriche come CSV"
 
-#: wp-tech-metrics.php:81
+#: simple-tech-metrics.php:81
 msgid "Use this tool to export all collected metrics into a single CSV file."
 msgstr "Utilizza questo strumento per esportare tutte le metriche raccolte in un unico file CSV."
 
-#: wp-tech-metrics.php:83
+#: simple-tech-metrics.php:83
 #, php-format
 msgid "Export %s as CSV"
 msgstr "Esporta %s come CSV"
 
-#: wp-tech-metrics.php:99
+#: simple-tech-metrics.php:99
 msgid "Unauthorized user"
 msgstr "Utente non autorizzato"
 
-#: wp-tech-metrics.php:106
+#: simple-tech-metrics.php:106
 msgid "Invalid export type"
 msgstr "Tipo di esportazione non valido"

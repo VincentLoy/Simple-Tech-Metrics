@@ -38,8 +38,8 @@ We use **Gitflow** to manage our development process. This workflow ensures smoo
 1. Fork the repository on GitHub.
 2. Clone your fork:
    ```bash
-   git clone https://github.com/<your-username>/wp-tech-metrics.git
-   cd wp-tech-metrics
+   git clone https://github.com/<your-username>/simple-tech-metrics.git
+   cd simple-tech-metrics
    ```
 
 ### Step 2: Set Up Gitflow

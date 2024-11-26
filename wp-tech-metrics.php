@@ -8,12 +8,12 @@ Author: Vincent Loy
 Author URI: https://github.com/VincentLoy
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: wp-tech-metrics
+Text Domain: simple-tech-metrics
 Domain Path: /languages
 */
 
 define('SIMPLE_TECH_METRICS_VERSION', '1.0.0');
-define('SIMPLE_TECH_METRICS_TEXT_DOMAIN', 'wp-tech-metrics');
+define('SIMPLE_TECH_METRICS_TEXT_DOMAIN', 'simple-tech-metrics');
 define('SIMPLE_TECH_METRICS_DIR', plugin_dir_path(__FILE__));
 define('SIMPLE_TECH_METRICS_URL', plugin_dir_url(__FILE__));
 
@@ -28,9 +28,9 @@ require_once SIMPLE_TECH_METRICS_DIR . 'includes/system-metrics.php';
 // Enqueue admin scripts and styles
 add_action('admin_enqueue_scripts', 'simple_tech_metrics_enqueue_assets');
 function simple_tech_metrics_enqueue_assets($hook_suffix) {
-    if ($hook_suffix === 'toplevel_page_wp-tech-metrics') {
-        wp_enqueue_style('wp-tech-metrics-styles', SIMPLE_TECH_METRICS_URL . 'assets/css/styles.css', [], SIMPLE_TECH_METRICS_VERSION);
-        wp_enqueue_script('wp-tech-metrics-scripts', SIMPLE_TECH_METRICS_URL . 'assets/js/scripts.js', ['jquery'], SIMPLE_TECH_METRICS_VERSION, true);
+    if ($hook_suffix === 'toplevel_page_simple-tech-metrics') {
+        wp_enqueue_style('simple-tech-metrics-styles', SIMPLE_TECH_METRICS_URL . 'assets/css/styles.css', [], SIMPLE_TECH_METRICS_VERSION);
+        wp_enqueue_script('simple-tech-metrics-scripts', SIMPLE_TECH_METRICS_URL . 'assets/js/scripts.js', ['jquery'], SIMPLE_TECH_METRICS_VERSION, true);
     }
 }
 
@@ -48,7 +48,7 @@ function simple_tech_metrics_register_menu() {
         __('Simple Tech Metrics', SIMPLE_TECH_METRICS_TEXT_DOMAIN),
         __('Tech Metrics', SIMPLE_TECH_METRICS_TEXT_DOMAIN),
         'manage_options',
-        'wp-tech-metrics',
+        'simple-tech-metrics',
         'simple_tech_metrics_display_page',
         'dashicons-chart-area',
         80
@@ -114,7 +114,7 @@ function simple_tech_metrics_export_csv() {
     $headers = $exports[$export_type]['headers'];
 
     header('Content-Type: text/csv; charset=utf-8');
-    header('Content-Disposition: attachment; filename=wp-tech-metrics-' . $export_type . '-' . date('Y-m-d') . '.csv');
+    header('Content-Disposition: attachment; filename=simple-tech-metrics-' . $export_type . '-' . date('Y-m-d') . '.csv');
     $output = fopen('php://output', 'w');
 
     // Write headers and data

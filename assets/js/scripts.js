@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 const a = document.createElement('a');
                 a.style.display = 'none';
                 a.href = url;
-                a.download = `wp-tech-metrics-${exportType}-${new Date().toISOString().split('T')[0]}.csv`;
+                a.download = `simple-tech-metrics-${exportType}-${new Date().toISOString().split('T')[0]}.csv`;
                 document.body.appendChild(a);
                 a.click();
                 window.URL.revokeObjectURL(url);
