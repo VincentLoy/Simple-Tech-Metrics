@@ -14,6 +14,8 @@ A WordPress plugin to display detailed technical metrics about your site, includ
 
 **WP Tech Metrics** provides a centralized dashboard with technical insights about your WordPress site. Designed for developers and administrators, this plugin helps you understand your site’s structure and optimize its performance.
 
+This plugin is **open-source** and welcomes contributions! Whether you’d like to propose new features, submit translations, or report issues, visit our [GitHub repository](https://github.com/VincentLoy/WP-Tech-Metrics) to get involved.
+
 == Features ==
 
 ### Plugins
@@ -67,6 +69,15 @@ Place your `.mo` and `.po` files in the `languages` folder of the plugin. Follow
 == Managing and Compiling Translations ==
 
 Refer to the "Managing and Compiling Translations" section in the documentation for detailed instructions on adding, editing, and compiling translations.
+
+== Contribute ==
+
+We welcome contributions to WP Tech Metrics! Here's how you can help:
+- **Suggest Features:** Share your ideas for improving the plugin.
+- **Submit Translations:** Help us expand language support by contributing `.po` and `.mo` files.
+- **Report Issues:** Encountered a bug? Let us know!
+
+Visit our [GitHub repository](https://github.com/VincentLoy/WP-Tech-Metrics) to contribute, collaborate, or report issues.
 
 == Changelog ==
 
