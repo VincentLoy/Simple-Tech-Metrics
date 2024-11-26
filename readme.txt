@@ -12,25 +12,25 @@ A WordPress plugin to display detailed technical metrics about your site, includ
 
 == Description ==
 
-**WP Tech Metrics** provides a centralized dashboard with technical insights about your WordPress site. Designed for developers and administrators, this plugin helps you understand your site’s structure and optimize its performance. 
+**WP Tech Metrics** provides a centralized dashboard with technical insights about your WordPress site. Designed for developers and administrators, this plugin helps you understand your site’s structure and optimize its performance.
 
 == Features ==
 
-### **Plugins**
+### Plugins
 - Lists all plugins with details such as name, version, size, status (active/inactive), and whether updates are available.
 
-### **Themes**
+### Themes
 - Displays all installed themes with details such as name, version, status (active/inactive), size, and last update date.
 
-### **Media**
+### Media
 - Summarizes the uploads folder with total size and file count.
 - Highlights the largest files with their sizes and file paths.
 
-### **Database**
+### Database
 - Shows detailed database metrics, including the size of each table, number of rows, and total database size.
 - Includes information on the last update time for each table.
 
-### **System Information**
+### System Information
 - Provides system metrics such as:
   - PHP version
   - Memory limits
@@ -39,11 +39,11 @@ A WordPress plugin to display detailed technical metrics about your site, includ
   - WordPress version
   - Disk space usage (total and available)
 
-### **Export Functionality**
+### Export Functionality
 - Export metrics for each section (plugins, themes, media, database, system) as individual CSV files.
 - Export all collected metrics into a single comprehensive CSV file.
 
-### **Multilingual Ready**
+### Multilingual Ready
 - Fully compatible with WordPress translation standards, allowing you to translate all plugin strings using `.po` and `.mo` files.
 
 == Installation ==
@@ -63,6 +63,10 @@ Yes! Each section has a dedicated export button to download metrics as a CSV fil
 
 = How do I translate the plugin? =
 Place your `.mo` and `.po` files in the `languages` folder of the plugin. Follow WordPress localization standards for translations.
+
+== Managing and Compiling Translations ==
+
+Refer to the "Managing and Compiling Translations" section in the documentation for detailed instructions on adding, editing, and compiling translations.
 
 == Changelog ==
 
