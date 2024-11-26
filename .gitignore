@@ -1,0 +1,3 @@
+# Ignore SVN files
+.svn
+.svn/*
