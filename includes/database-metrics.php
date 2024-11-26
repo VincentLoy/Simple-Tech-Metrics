@@ -1,6 +1,6 @@
 <?php
 
-function wp_tech_metrics_get_database_data() {
+function simple_tech_metrics_get_database_data() {
     global $wpdb;
 
     $tables = $wpdb->get_results('SHOW TABLE STATUS');
@@ -24,22 +24,22 @@ function wp_tech_metrics_get_database_data() {
     return $database_data;
 }
 
-function wp_tech_metrics_display_database_table() {
-    $database_data = wp_tech_metrics_get_database_data();
+function simple_tech_metrics_display_database_table() {
+    $database_data = simple_tech_metrics_get_database_data();
 
-    echo '<h2>' . __('Database', WP_TECH_METRICS_TEXT_DOMAIN) . '</h2>';
+    echo '<h2>' . __('Database', SIMPLE_TECH_METRICS_TEXT_DOMAIN) . '</h2>';
     echo '<p>' . sprintf(
-        __('Total database size: <strong>%s</strong>', WP_TECH_METRICS_TEXT_DOMAIN),
+        __('Total database size: <strong>%s</strong>', SIMPLE_TECH_METRICS_TEXT_DOMAIN),
         esc_html(size_format($database_data['total_size'] * 1024 * 1024, 2))
     ) . '</p>';
 
     echo '<table class="widefat fixed striped">';
     echo '<thead>
             <tr>
-                <th>' . __('Table Name', WP_TECH_METRICS_TEXT_DOMAIN) . '</th>
-                <th>' . __('Rows', WP_TECH_METRICS_TEXT_DOMAIN) . '</th>
-                <th>' . __('Size', WP_TECH_METRICS_TEXT_DOMAIN) . '</th>
-                <th>' . __('Last Update', WP_TECH_METRICS_TEXT_DOMAIN) . '</th>
+                <th>' . __('Table Name', SIMPLE_TECH_METRICS_TEXT_DOMAIN) . '</th>
+                <th>' . __('Rows', SIMPLE_TECH_METRICS_TEXT_DOMAIN) . '</th>
+                <th>' . __('Size', SIMPLE_TECH_METRICS_TEXT_DOMAIN) . '</th>
+                <th>' . __('Last Update', SIMPLE_TECH_METRICS_TEXT_DOMAIN) . '</th>
             </tr>
           </thead>';
     echo '<tbody>';
@@ -49,7 +49,7 @@ function wp_tech_metrics_display_database_table() {
         echo '<td>' . esc_html($table['name']) . '</td>';
         echo '<td>' . esc_html($table['rows']) . '</td>';
         echo '<td>' . esc_html($table['size']) . '</td>';
-        echo '<td>' . esc_html($table['update_time'] ?? __('N/A', WP_TECH_METRICS_TEXT_DOMAIN)) . '</td>';
+        echo '<td>' . esc_html($table['update_time'] ?? __('N/A', SIMPLE_TECH_METRICS_TEXT_DOMAIN)) . '</td>';
         echo '</tr>';
     }
     

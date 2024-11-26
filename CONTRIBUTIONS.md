@@ -1,6 +1,6 @@
 # Contributions Guide
 
-Thank you for your interest in contributing to **WP Tech Metrics**! This document explains the workflow and best practices we follow to ensure the project's success. Whether you're a beginner or an experienced developer, you're welcome here!
+Thank you for your interest in contributing to **Simple Tech Metrics**! This document explains the workflow and best practices we follow to ensure the project's success. Whether you're a beginner or an experienced developer, you're welcome here!
 
 ---
 

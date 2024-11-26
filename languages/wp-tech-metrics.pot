@@ -1,10 +1,10 @@
-# WP TECH METRICS TRANSLATION TEMPLATE FILE
-# This file is distributed under the same license as the WP TECH METRICS package.
+# Simple Tech Metrics TRANSLATION TEMPLATE FILE
+# This file is distributed under the same license as the Simple Tech Metrics package.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: wp_tech_metrics \n"
+"Project-Id-Version: simple_tech_metrics \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-26 16:40+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -113,7 +113,7 @@ msgid "Themes"
 msgstr ""
 
 #: wp-tech-metrics.php:44 wp-tech-metrics.php:66
-msgid "WP Tech Metrics"
+msgid "Simple Tech Metrics"
 msgstr ""
 
 #: wp-tech-metrics.php:45

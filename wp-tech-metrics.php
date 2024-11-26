@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: WP Tech Metrics
+Plugin Name: Simple Tech Metrics
 Plugin URI: https://github.com/VincentLoy/WP-Tech-Metrics
 Description: Basic insights to better understand your WordPress site.
 Version: 1.0.0
@@ -12,63 +12,63 @@ Text Domain: wp-tech-metrics
 Domain Path: /languages
 */
 
-define('WP_TECH_METRICS_VERSION', '1.0.0');
-define('WP_TECH_METRICS_TEXT_DOMAIN', 'wp-tech-metrics');
-define('WP_TECH_METRICS_DIR', plugin_dir_path(__FILE__));
-define('WP_TECH_METRICS_URL', plugin_dir_url(__FILE__));
+define('SIMPLE_TECH_METRICS_VERSION', '1.0.0');
+define('SIMPLE_TECH_METRICS_TEXT_DOMAIN', 'wp-tech-metrics');
+define('SIMPLE_TECH_METRICS_DIR', plugin_dir_path(__FILE__));
+define('SIMPLE_TECH_METRICS_URL', plugin_dir_url(__FILE__));
 
 // Includes
-require_once WP_TECH_METRICS_DIR . 'includes/helpers.php';
-require_once WP_TECH_METRICS_DIR . 'includes/themes-metrics.php';
-require_once WP_TECH_METRICS_DIR . 'includes/plugins-metrics.php';
-require_once WP_TECH_METRICS_DIR . 'includes/media-metrics.php';
-require_once WP_TECH_METRICS_DIR . 'includes/database-metrics.php';
-require_once WP_TECH_METRICS_DIR . 'includes/system-metrics.php';
+require_once SIMPLE_TECH_METRICS_DIR . 'includes/helpers.php';
+require_once SIMPLE_TECH_METRICS_DIR . 'includes/themes-metrics.php';
+require_once SIMPLE_TECH_METRICS_DIR . 'includes/plugins-metrics.php';
+require_once SIMPLE_TECH_METRICS_DIR . 'includes/media-metrics.php';
+require_once SIMPLE_TECH_METRICS_DIR . 'includes/database-metrics.php';
+require_once SIMPLE_TECH_METRICS_DIR . 'includes/system-metrics.php';
 
 // Enqueue admin scripts and styles
-add_action('admin_enqueue_scripts', 'wp_tech_metrics_enqueue_assets');
-function wp_tech_metrics_enqueue_assets($hook_suffix) {
+add_action('admin_enqueue_scripts', 'simple_tech_metrics_enqueue_assets');
+function simple_tech_metrics_enqueue_assets($hook_suffix) {
     if ($hook_suffix === 'toplevel_page_wp-tech-metrics') {
-        wp_enqueue_style('wp-tech-metrics-styles', WP_TECH_METRICS_URL . 'assets/css/styles.css', [], WP_TECH_METRICS_VERSION);
-        wp_enqueue_script('wp-tech-metrics-scripts', WP_TECH_METRICS_URL . 'assets/js/scripts.js', ['jquery'], WP_TECH_METRICS_VERSION, true);
+        wp_enqueue_style('wp-tech-metrics-styles', SIMPLE_TECH_METRICS_URL . 'assets/css/styles.css', [], SIMPLE_TECH_METRICS_VERSION);
+        wp_enqueue_script('wp-tech-metrics-scripts', SIMPLE_TECH_METRICS_URL . 'assets/js/scripts.js', ['jquery'], SIMPLE_TECH_METRICS_VERSION, true);
     }
 }
 
 // lang stuff
-add_action('plugins_loaded', 'wp_tech_metrics_load_textdomain');
-function wp_tech_metrics_load_textdomain() {
-    load_plugin_textdomain(WP_TECH_METRICS_TEXT_DOMAIN, false, dirname(plugin_basename(__FILE__)) . '/languages/');
+add_action('plugins_loaded', 'simple_tech_metrics_load_textdomain');
+function simple_tech_metrics_load_textdomain() {
+    load_plugin_textdomain(SIMPLE_TECH_METRICS_TEXT_DOMAIN, false, dirname(plugin_basename(__FILE__)) . '/languages/');
 }
 
 
 // Add admin menu
-add_action('admin_menu', 'wp_tech_metrics_register_menu');
-function wp_tech_metrics_register_menu() {
+add_action('admin_menu', 'simple_tech_metrics_register_menu');
+function simple_tech_metrics_register_menu() {
     add_menu_page(
-        __('WP Tech Metrics', WP_TECH_METRICS_TEXT_DOMAIN),
-        __('Tech Metrics', WP_TECH_METRICS_TEXT_DOMAIN),
+        __('Simple Tech Metrics', SIMPLE_TECH_METRICS_TEXT_DOMAIN),
+        __('Tech Metrics', SIMPLE_TECH_METRICS_TEXT_DOMAIN),
         'manage_options',
         'wp-tech-metrics',
-        'wp_tech_metrics_display_page',
+        'simple_tech_metrics_display_page',
         'dashicons-chart-area',
         80
     );
 }
 
 // Display admin page
-function wp_tech_metrics_display_page() {
+function simple_tech_metrics_display_page() {
     $tabs = [
-        'themes' => __('Themes', WP_TECH_METRICS_TEXT_DOMAIN),
-        'plugins' => __('Plugins', WP_TECH_METRICS_TEXT_DOMAIN),
-        'media' => __('Media', WP_TECH_METRICS_TEXT_DOMAIN),
-        'database' => __('Database', WP_TECH_METRICS_TEXT_DOMAIN),
-        'system' => __('System', WP_TECH_METRICS_TEXT_DOMAIN),
-        'tools' => __('Tools', WP_TECH_METRICS_TEXT_DOMAIN)
+        'themes' => __('Themes', SIMPLE_TECH_METRICS_TEXT_DOMAIN),
+        'plugins' => __('Plugins', SIMPLE_TECH_METRICS_TEXT_DOMAIN),
+        'media' => __('Media', SIMPLE_TECH_METRICS_TEXT_DOMAIN),
+        'database' => __('Database', SIMPLE_TECH_METRICS_TEXT_DOMAIN),
+        'system' => __('System', SIMPLE_TECH_METRICS_TEXT_DOMAIN),
+        'tools' => __('Tools', SIMPLE_TECH_METRICS_TEXT_DOMAIN)
     ];
 
     echo '<div class="wrap">';
-    echo '<h1>' . __('WP Tech Metrics', WP_TECH_METRICS_TEXT_DOMAIN) . '</h1>';
-    echo '<p>' . __('Technical metrics for your WordPress site are displayed below:', WP_TECH_METRICS_TEXT_DOMAIN) . '</p>';
+    echo '<h1>' . __('Simple Tech Metrics', SIMPLE_TECH_METRICS_TEXT_DOMAIN) . '</h1>';
+    echo '<p>' . __('Technical metrics for your WordPress site are displayed below:', SIMPLE_TECH_METRICS_TEXT_DOMAIN) . '</p>';
 
     // Tab navigation
     echo '<h2 class="nav-tab-wrapper">';
@@ -81,11 +81,11 @@ function wp_tech_metrics_display_page() {
     foreach ($tabs as $id => $label) {
         echo '<div id="' . esc_attr($id) . '" class="tab-content" style="' . ($id !== 'themes' ? 'display:none;' : '') . '">';
         if ($id === 'tools') {
-            echo '<button class="button export-csv" data-export="all">' . __('Export All Metrics as CSV', WP_TECH_METRICS_TEXT_DOMAIN) . '</button>';
-            echo '<p>' . __('Use this tool to export all collected metrics into a single CSV file.', WP_TECH_METRICS_TEXT_DOMAIN) . '</p>';
+            echo '<button class="button export-csv" data-export="all">' . __('Export All Metrics as CSV', SIMPLE_TECH_METRICS_TEXT_DOMAIN) . '</button>';
+            echo '<p>' . __('Use this tool to export all collected metrics into a single CSV file.', SIMPLE_TECH_METRICS_TEXT_DOMAIN) . '</p>';
         } else {
-            echo '<button class="button export-csv" data-export="' . esc_attr($id) . '">' . sprintf(__('Export %s as CSV', WP_TECH_METRICS_TEXT_DOMAIN), esc_html($label)) . '</button>';
-            $display_function = 'wp_tech_metrics_display_' . $id . '_table';
+            echo '<button class="button export-csv" data-export="' . esc_attr($id) . '">' . sprintf(__('Export %s as CSV', SIMPLE_TECH_METRICS_TEXT_DOMAIN), esc_html($label)) . '</button>';
+            $display_function = 'simple_tech_metrics_display_' . $id . '_table';
             if (function_exists($display_function)) {
                 $display_function();
             }
@@ -97,17 +97,17 @@ function wp_tech_metrics_display_page() {
 }
 
 // AJAX CSV Export
-add_action('wp_ajax_wp_tech_metrics_export_csv', 'wp_tech_metrics_export_csv');
-function wp_tech_metrics_export_csv() {
+add_action('wp_ajax_simple_tech_metrics_export_csv', 'simple_tech_metrics_export_csv');
+function simple_tech_metrics_export_csv() {
     if (!current_user_can('manage_options')) {
-        wp_die(__('Unauthorized user', WP_TECH_METRICS_TEXT_DOMAIN));
+        wp_die(__('Unauthorized user', SIMPLE_TECH_METRICS_TEXT_DOMAIN));
     }
 
     $export_type = sanitize_text_field($_POST['export_type']);
-    $exports = wp_tech_metrics_get_exports();
+    $exports = simple_tech_metrics_get_exports();
 
     if (!isset($exports[$export_type])) {
-        wp_die(__('Invalid export type', WP_TECH_METRICS_TEXT_DOMAIN));
+        wp_die(__('Invalid export type', SIMPLE_TECH_METRICS_TEXT_DOMAIN));
     }
 
     $data = $exports[$export_type]['data']();
@@ -127,32 +127,32 @@ function wp_tech_metrics_export_csv() {
 }
 
 // Export configurations
-function wp_tech_metrics_get_exports() {
+function simple_tech_metrics_get_exports() {
     return [
         'themes' => [
             'headers' => ['Name', 'Version', 'Status', 'Size', 'Last Update'],
-            'data' => 'wp_tech_metrics_get_themes_data'
+            'data' => 'simple_tech_metrics_get_themes_data'
         ],
         'plugins' => [
             'headers' => ['Name', 'Version', 'Status', 'Size', 'Update Available'],
-            'data' => 'wp_tech_metrics_get_plugins_data'
+            'data' => 'simple_tech_metrics_get_plugins_data'
         ],
         'media' => [
             'headers' => ['Name', 'Size', 'Path'],
             'data' => function () {
-                return wp_tech_metrics_get_media_data()['largest_files'];
+                return simple_tech_metrics_get_media_data()['largest_files'];
             }
         ],
         'database' => [
             'headers' => ['Table Name', 'Rows', 'Size', 'Last Update'],
             'data' => function () {
-                return wp_tech_metrics_get_database_data()['tables'];
+                return simple_tech_metrics_get_database_data()['tables'];
             }
         ],
         'system' => [
             'headers' => ['Metric', 'Value'],
             'data' => function () {
-                $system_data = wp_tech_metrics_get_system_data();
+                $system_data = simple_tech_metrics_get_system_data();
                 return array_map(function ($key, $value) {
                     return ['Metric' => ucwords(str_replace('_', ' ', $key)), 'Value' => $value];
                 }, array_keys($system_data), $system_data);
@@ -160,14 +160,14 @@ function wp_tech_metrics_get_exports() {
         ],
         'all' => [
             'headers' => [],
-            'data' => 'wp_tech_metrics_export_all_sections'
+            'data' => 'simple_tech_metrics_export_all_sections'
         ]
     ];
 }
 
 // All sections export
-function wp_tech_metrics_export_all_sections() {
-    $exports = wp_tech_metrics_get_exports();
+function simple_tech_metrics_export_all_sections() {
+    $exports = simple_tech_metrics_get_exports();
     $output = [];
 
     foreach ($exports as $section => $config) {

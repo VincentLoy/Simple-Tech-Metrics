@@ -1,11 +1,11 @@
-# Ukrainian translations for wp_tech_metrics package.
+# Ukrainian translations for simple_tech_metrics package.
 
 # This file is distributed under the same license as the wp-tech-metrics package.
 # Automatically generated, 2024.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: wp_tech_metrics 5\n"
+"Project-Id-Version: simple_tech_metrics 5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-26 16:40+0100\n"
 "PO-Revision-Date: 2024-11-26 16:40+0100\n"
@@ -116,8 +116,8 @@ msgid "Themes"
 msgstr "Теми"
 
 #: wp-tech-metrics.php:44 wp-tech-metrics.php:66
-msgid "WP Tech Metrics"
-msgstr "WP Tech Metrics"
+msgid "Simple Tech Metrics"
+msgstr "Simple Tech Metrics"
 
 #: wp-tech-metrics.php:45
 msgid "Tech Metrics"

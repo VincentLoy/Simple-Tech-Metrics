@@ -1,9 +1,9 @@
 <?php
 
-function wp_tech_metrics_get_media_data() {
+function simple_tech_metrics_get_media_data() {
     $uploads_dir = wp_upload_dir()['basedir']; // Chemin absolu vers le dossier uploads
     $media_data = [
-        'total_size' => wp_tech_metrics_calculate_folder_size($uploads_dir), // Taille totale
+        'total_size' => simple_tech_metrics_calculate_folder_size($uploads_dir), // Taille totale
         'total_files' => 0,
         'largest_files' => [],
         'unused_files' => [], // Placeholder pour des fichiers non référencés
@@ -32,27 +32,27 @@ function wp_tech_metrics_get_media_data() {
     return $media_data;
 }
 
-function wp_tech_metrics_display_media_table() {
-    $media_data = wp_tech_metrics_get_media_data();
+function simple_tech_metrics_display_media_table() {
+    $media_data = simple_tech_metrics_get_media_data();
 
-    echo '<h2>' . __('Media', WP_TECH_METRICS_TEXT_DOMAIN) . '</h2>';
+    echo '<h2>' . __('Media', SIMPLE_TECH_METRICS_TEXT_DOMAIN) . '</h2>';
     echo '<p>' . sprintf(
-        __('Total uploads folder size: <strong>%s</strong>', WP_TECH_METRICS_TEXT_DOMAIN),
+        __('Total uploads folder size: <strong>%s</strong>', SIMPLE_TECH_METRICS_TEXT_DOMAIN),
         esc_html($media_data['total_size'])
     ) . '</p>';
     echo '<p>' . sprintf(
-        __('Total number of files: <strong>%d</strong>', WP_TECH_METRICS_TEXT_DOMAIN),
+        __('Total number of files: <strong>%d</strong>', SIMPLE_TECH_METRICS_TEXT_DOMAIN),
         esc_html($media_data['total_files'])
     ) . '</p>';
 
     // Table for largest files
-    echo '<h3>' . __('Largest Files', WP_TECH_METRICS_TEXT_DOMAIN) . '</h3>';
+    echo '<h3>' . __('Largest Files', SIMPLE_TECH_METRICS_TEXT_DOMAIN) . '</h3>';
     echo '<table class="widefat fixed striped">';
     echo '<thead>
             <tr>
-                <th>' . __('Name', WP_TECH_METRICS_TEXT_DOMAIN) . '</th>
-                <th>' . __('Size', WP_TECH_METRICS_TEXT_DOMAIN) . '</th>
-                <th>' . __('Path', WP_TECH_METRICS_TEXT_DOMAIN) . '</th>
+                <th>' . __('Name', SIMPLE_TECH_METRICS_TEXT_DOMAIN) . '</th>
+                <th>' . __('Size', SIMPLE_TECH_METRICS_TEXT_DOMAIN) . '</th>
+                <th>' . __('Path', SIMPLE_TECH_METRICS_TEXT_DOMAIN) . '</th>
             </tr>
           </thead>';
     echo '<tbody>';

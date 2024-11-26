@@ -1,6 +1,6 @@
 <?php
 
-function wp_tech_metrics_get_system_data() {
+function simple_tech_metrics_get_system_data() {
     global $wpdb;
 
     return [
@@ -19,15 +19,15 @@ function wp_tech_metrics_get_system_data() {
     ];
 }
 
-function wp_tech_metrics_display_system_table() {
-    $system_data = wp_tech_metrics_get_system_data();
+function simple_tech_metrics_display_system_table() {
+    $system_data = simple_tech_metrics_get_system_data();
 
-    echo '<h2>' . __('System Information', WP_TECH_METRICS_TEXT_DOMAIN) . '</h2>';
+    echo '<h2>' . __('System Information', SIMPLE_TECH_METRICS_TEXT_DOMAIN) . '</h2>';
     echo '<table class="widefat fixed striped">';
     echo '<thead>
             <tr>
-                <th>' . __('Metric', WP_TECH_METRICS_TEXT_DOMAIN) . '</th>
-                <th>' . __('Value', WP_TECH_METRICS_TEXT_DOMAIN) . '</th>
+                <th>' . __('Metric', SIMPLE_TECH_METRICS_TEXT_DOMAIN) . '</th>
+                <th>' . __('Value', SIMPLE_TECH_METRICS_TEXT_DOMAIN) . '</th>
             </tr>
           </thead>';
     echo '<tbody>';

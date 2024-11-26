@@ -1,6 +1,6 @@
 <?php
 
-function wp_tech_metrics_calculate_folder_size($folder) {
+function simple_tech_metrics_calculate_folder_size($folder) {
     $size = 0;
 
     if (!is_dir($folder)) {

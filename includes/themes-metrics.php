@@ -1,13 +1,13 @@
 <?php
 
-function wp_tech_metrics_get_themes_data() {
+function simple_tech_metrics_get_themes_data() {
     // Récupérer les données de tous les thèmes installés
     $themes = wp_get_themes();
 
     $themes_data = [];
     foreach ($themes as $theme_slug => $theme) {
         $theme_path = $theme->get_theme_root() . '/' . $theme_slug;
-        $theme_size = wp_tech_metrics_calculate_folder_size($theme_path);
+        $theme_size = simple_tech_metrics_calculate_folder_size($theme_path);
 
         $themes_data[] = [
             'name'        => $theme->get('Name'),
@@ -21,18 +21,18 @@ function wp_tech_metrics_get_themes_data() {
     return $themes_data;
 }
 
-function wp_tech_metrics_display_themes_table() {
-    $themes_data = wp_tech_metrics_get_themes_data();
+function simple_tech_metrics_display_themes_table() {
+    $themes_data = simple_tech_metrics_get_themes_data();
     
-    echo '<h2>' . __('Themes', WP_TECH_METRICS_TEXT_DOMAIN) . '</h2>';
+    echo '<h2>' . __('Themes', SIMPLE_TECH_METRICS_TEXT_DOMAIN) . '</h2>';
     echo '<table class="widefat fixed striped">';
     echo '<thead>
     <tr>
-    <th>' . __('Name', WP_TECH_METRICS_TEXT_DOMAIN) . '</th>
-    <th>' . __('Version', WP_TECH_METRICS_TEXT_DOMAIN) . '</th>
-    <th>' . __('Status', WP_TECH_METRICS_TEXT_DOMAIN) . '</th>
-    <th>' . __('Size', WP_TECH_METRICS_TEXT_DOMAIN) . '</th>
-    <th>' . __('Last Update', WP_TECH_METRICS_TEXT_DOMAIN) . '</th>
+    <th>' . __('Name', SIMPLE_TECH_METRICS_TEXT_DOMAIN) . '</th>
+    <th>' . __('Version', SIMPLE_TECH_METRICS_TEXT_DOMAIN) . '</th>
+    <th>' . __('Status', SIMPLE_TECH_METRICS_TEXT_DOMAIN) . '</th>
+    <th>' . __('Size', SIMPLE_TECH_METRICS_TEXT_DOMAIN) . '</th>
+    <th>' . __('Last Update', SIMPLE_TECH_METRICS_TEXT_DOMAIN) . '</th>
     </tr>
     </thead>';
     echo '<tbody>';

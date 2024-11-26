@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
         button.addEventListener('click', function () {
             const exportType = this.dataset.export;
             const formData = new FormData();
-            formData.append('action', 'wp_tech_metrics_export_csv');
+            formData.append('action', 'simple_tech_metrics_export_csv');
             formData.append('export_type', exportType);
 
             fetch(ajaxurl, {
