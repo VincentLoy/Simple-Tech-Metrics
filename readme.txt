@@ -14,7 +14,7 @@ A WordPress plugin to display detailed technical metrics about your site, includ
 
 **Simple Tech Metrics** provides a centralized dashboard with technical insights about your WordPress site. Designed for developers and administrators, this plugin helps you understand your site’s structure and optimize its performance.
 
-This plugin is **open-source** and welcomes contributions! Whether you’d like to propose new features, submit translations, or report issues, visit our [GitHub repository](https://github.com/VincentLoy/WP-Tech-Metrics) to get involved.
+This plugin is **open-source** and welcomes contributions! Whether you’d like to propose new features, submit translations, or report issues, visit our [GitHub repository](https://github.com/VincentLoy/Simple-Tech-Metrics) to get involved.
 
 == Features ==
 
@@ -77,7 +77,7 @@ We welcome contributions to Simple Tech Metrics! Here's how you can help:
 - **Submit Translations:** Help us expand language support by contributing `.po` and `.mo` files.
 - **Report Issues:** Encountered a bug? Let us know!
 
-Visit our [GitHub repository](https://github.com/VincentLoy/WP-Tech-Metrics) to contribute, collaborate, or report issues.
+Visit our [GitHub repository](https://github.com/VincentLoy/Simple-Tech-Metrics) to contribute, collaborate, or report issues.
 
 == Changelog ==
 

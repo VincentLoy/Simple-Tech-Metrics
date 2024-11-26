@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Simple Tech Metrics
-Plugin URI: https://github.com/VincentLoy/WP-Tech-Metrics
+Plugin URI: https://github.com/VincentLoy/Simple-Tech-Metrics
 Description: Basic insights to better understand your WordPress site.
 Version: 1.0.0
 Author: Vincent Loy
