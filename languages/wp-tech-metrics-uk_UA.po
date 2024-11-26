@@ -1,0 +1,157 @@
+# Ukrainian translations for wp_tech_metrics package.
+
+# This file is distributed under the same license as the wp-tech-metrics package.
+# Automatically generated, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: wp_tech_metrics 5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-11-26 16:40+0100\n"
+"PO-Revision-Date: 2024-11-26 16:40+0100\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ASCII\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: includes/database-metrics.php:30 wp-tech-metrics.php:60
+msgid "Database"
+msgstr "База даних"
+
+#: includes/database-metrics.php:32
+#, php-format
+msgid "Total database size: <strong>%s</strong>"
+msgstr "Загальний розмір бази даних: <strong>%s</strong>"
+
+#: includes/database-metrics.php:39
+msgid "Table Name"
+msgstr "Назва таблиці"
+
+#: includes/database-metrics.php:40
+msgid "Rows"
+msgstr "Рядки"
+
+#: includes/database-metrics.php:41 includes/media-metrics.php:54
+#: includes/plugins-metrics.php:44 includes/themes-metrics.php:34
+msgid "Size"
+msgstr "Розмір"
+
+#: includes/database-metrics.php:42 includes/themes-metrics.php:35
+msgid "Last Update"
+msgstr "Останнє оновлення"
+
+#: includes/database-metrics.php:52
+msgid "N/A"
+msgstr "Н/Д"
+
+#: includes/media-metrics.php:38 wp-tech-metrics.php:59
+msgid "Media"
+msgstr "Медіа"
+
+#: includes/media-metrics.php:40
+#, php-format
+msgid "Total uploads folder size: <strong>%s</strong>"
+msgstr "Загальний розмір папки завантажень: <strong>%s</strong>"
+
+#: includes/media-metrics.php:44
+#, php-format
+msgid "Total number of files: <strong>%d</strong>"
+msgstr "Загальна кількість файлів: <strong>%d</strong>"
+
+#: includes/media-metrics.php:49
+msgid "Largest Files"
+msgstr "Найбільші файли"
+
+#: includes/media-metrics.php:53 includes/plugins-metrics.php:41
+#: includes/themes-metrics.php:31
+msgid "Name"
+msgstr "Назва"
+
+#: includes/media-metrics.php:55
+msgid "Path"
+msgstr "Шлях"
+
+#: includes/plugins-metrics.php:37 wp-tech-metrics.php:58
+msgid "Plugins"
+msgstr "Плагіни"
+
+#: includes/plugins-metrics.php:42 includes/themes-metrics.php:32
+msgid "Version"
+msgstr "Версія"
+
+#: includes/plugins-metrics.php:43 includes/themes-metrics.php:33
+msgid "Status"
+msgstr "Статус"
+
+#: includes/plugins-metrics.php:45
+msgid "Update Available"
+msgstr "Доступне оновлення"
+
+#: includes/plugins-metrics.php:62
+msgid "Yes"
+msgstr "Так"
+
+#: includes/plugins-metrics.php:62
+msgid "No"
+msgstr "Ні"
+
+#: includes/system-metrics.php:25
+msgid "System Information"
+msgstr "Інформація про систему"
+
+#: includes/system-metrics.php:29
+msgid "Metric"
+msgstr "Метрика"
+
+#: includes/system-metrics.php:30
+msgid "Value"
+msgstr "Значення"
+
+#: includes/themes-metrics.php:27 wp-tech-metrics.php:57
+msgid "Themes"
+msgstr "Теми"
+
+#: wp-tech-metrics.php:44 wp-tech-metrics.php:66
+msgid "WP Tech Metrics"
+msgstr "WP Tech Metrics"
+
+#: wp-tech-metrics.php:45
+msgid "Tech Metrics"
+msgstr "Технічні метрики"
+
+#: wp-tech-metrics.php:61
+msgid "System"
+msgstr "Система"
+
+#: wp-tech-metrics.php:62
+msgid "Tools"
+msgstr "Інструменти"
+
+#: wp-tech-metrics.php:67
+msgid "Technical metrics for your WordPress site are displayed below:"
+msgstr "Технічні метрики вашого сайту WordPress відображаються нижче:"
+
+#: wp-tech-metrics.php:80
+msgid "Export All Metrics as CSV"
+msgstr "Експортувати всі метрики у формат CSV"
+
+#: wp-tech-metrics.php:81
+msgid "Use this tool to export all collected metrics into a single CSV file."
+msgstr "Використовуйте цей інструмент для експорту всіх зібраних метрик в один файл CSV."
+
+#: wp-tech-metrics.php:83
+#, php-format
+msgid "Export %s as CSV"
+msgstr "Експортувати %s у формат CSV"
+
+#: wp-tech-metrics.php:99
+msgid "Unauthorized user"
+msgstr "Неавторизований користувач"
+
+#: wp-tech-metrics.php:106
+msgid "Invalid export type"
+msgstr "Недійсний тип експорту"

@@ -1,0 +1,155 @@
+# Italian translations for wp_tech_metrics package.
+# This file is distributed under the same license as the wp-tech-metrics package.
+# Automatically generated, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: wp_tech_metrics 5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-11-26 16:40+0100\n"
+"PO-Revision-Date: 2024-11-26 16:40+0100\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ASCII\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: includes/database-metrics.php:30 wp-tech-metrics.php:60
+msgid "Database"
+msgstr "Database"
+
+#: includes/database-metrics.php:32
+#, php-format
+msgid "Total database size: <strong>%s</strong>"
+msgstr "Dimensione totale del database: <strong>%s</strong>"
+
+#: includes/database-metrics.php:39
+msgid "Table Name"
+msgstr "Nome tabella"
+
+#: includes/database-metrics.php:40
+msgid "Rows"
+msgstr "Righe"
+
+#: includes/database-metrics.php:41 includes/media-metrics.php:54
+#: includes/plugins-metrics.php:44 includes/themes-metrics.php:34
+msgid "Size"
+msgstr "Dimensione"
+
+#: includes/database-metrics.php:42 includes/themes-metrics.php:35
+msgid "Last Update"
+msgstr "Ultimo aggiornamento"
+
+#: includes/database-metrics.php:52
+msgid "N/A"
+msgstr "Non disponibile"
+
+#: includes/media-metrics.php:38 wp-tech-metrics.php:59
+msgid "Media"
+msgstr "Media"
+
+#: includes/media-metrics.php:40
+#, php-format
+msgid "Total uploads folder size: <strong>%s</strong>"
+msgstr "Dimensione totale della cartella upload: <strong>%s</strong>"
+
+#: includes/media-metrics.php:44
+#, php-format
+msgid "Total number of files: <strong>%d</strong>"
+msgstr "Numero totale di file: <strong>%d</strong>"
+
+#: includes/media-metrics.php:49
+msgid "Largest Files"
+msgstr "File più grandi"
+
+#: includes/media-metrics.php:53 includes/plugins-metrics.php:41
+#: includes/themes-metrics.php:31
+msgid "Name"
+msgstr "Nome"
+
+#: includes/media-metrics.php:55
+msgid "Path"
+msgstr "Percorso"
+
+#: includes/plugins-metrics.php:37 wp-tech-metrics.php:58
+msgid "Plugins"
+msgstr "Plugin"
+
+#: includes/plugins-metrics.php:42 includes/themes-metrics.php:32
+msgid "Version"
+msgstr "Versione"
+
+#: includes/plugins-metrics.php:43 includes/themes-metrics.php:33
+msgid "Status"
+msgstr "Stato"
+
+#: includes/plugins-metrics.php:45
+msgid "Update Available"
+msgstr "Aggiornamento disponibile"
+
+#: includes/plugins-metrics.php:62
+msgid "Yes"
+msgstr "Sì"
+
+#: includes/plugins-metrics.php:62
+msgid "No"
+msgstr "No"
+
+#: includes/system-metrics.php:25
+msgid "System Information"
+msgstr "Informazioni di sistema"
+
+#: includes/system-metrics.php:29
+msgid "Metric"
+msgstr "Metrica"
+
+#: includes/system-metrics.php:30
+msgid "Value"
+msgstr "Valore"
+
+#: includes/themes-metrics.php:27 wp-tech-metrics.php:57
+msgid "Themes"
+msgstr "Temi"
+
+#: wp-tech-metrics.php:44 wp-tech-metrics.php:66
+msgid "WP Tech Metrics"
+msgstr "WP Tech Metrics"
+
+#: wp-tech-metrics.php:45
+msgid "Tech Metrics"
+msgstr "Metriche tecniche"
+
+#: wp-tech-metrics.php:61
+msgid "System"
+msgstr "Sistema"
+
+#: wp-tech-metrics.php:62
+msgid "Tools"
+msgstr "Strumenti"
+
+#: wp-tech-metrics.php:67
+msgid "Technical metrics for your WordPress site are displayed below:"
+msgstr "Le metriche tecniche del tuo sito WordPress sono mostrate di seguito:"
+
+#: wp-tech-metrics.php:80
+msgid "Export All Metrics as CSV"
+msgstr "Esporta tutte le metriche come CSV"
+
+#: wp-tech-metrics.php:81
+msgid "Use this tool to export all collected metrics into a single CSV file."
+msgstr "Utilizza questo strumento per esportare tutte le metriche raccolte in un unico file CSV."
+
+#: wp-tech-metrics.php:83
+#, php-format
+msgid "Export %s as CSV"
+msgstr "Esporta %s come CSV"
+
+#: wp-tech-metrics.php:99
+msgid "Unauthorized user"
+msgstr "Utente non autorizzato"
+
+#: wp-tech-metrics.php:106
+msgid "Invalid export type"
+msgstr "Tipo di esportazione non valido"

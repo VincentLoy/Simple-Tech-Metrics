@@ -1,0 +1,155 @@
+# Chinese translations for wp_tech_metrics package.
+
+# This file is distributed under the same license as the wp-tech-metrics package.
+# Automatically generated, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: wp_tech_metrics 5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-11-26 16:40+0100\n"
+"PO-Revision-Date: 2024-11-26 16:40+0100\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ASCII\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: includes/database-metrics.php:30 wp-tech-metrics.php:60
+msgid "Database"
+msgstr "数据库"
+
+#: includes/database-metrics.php:32
+#, php-format
+msgid "Total database size: <strong>%s</strong>"
+msgstr "数据库总大小：<strong>%s</strong>"
+
+#: includes/database-metrics.php:39
+msgid "Table Name"
+msgstr "表名"
+
+#: includes/database-metrics.php:40
+msgid "Rows"
+msgstr "行数"
+
+#: includes/database-metrics.php:41 includes/media-metrics.php:54
+#: includes/plugins-metrics.php:44 includes/themes-metrics.php:34
+msgid "Size"
+msgstr "大小"
+
+#: includes/database-metrics.php:42 includes/themes-metrics.php:35
+msgid "Last Update"
+msgstr "最后更新"
+
+#: includes/database-metrics.php:52
+msgid "N/A"
+msgstr "不可用"
+
+#: includes/media-metrics.php:38 wp-tech-metrics.php:59
+msgid "Media"
+msgstr "媒体"
+
+#: includes/media-metrics.php:40
+#, php-format
+msgid "Total uploads folder size: <strong>%s</strong>"
+msgstr "上传文件夹总大小：<strong>%s</strong>"
+
+#: includes/media-metrics.php:44
+#, php-format
+msgid "Total number of files: <strong>%d</strong>"
+msgstr "文件总数：<strong>%d</strong>"
+
+#: includes/media-metrics.php:49
+msgid "Largest Files"
+msgstr "最大文件"
+
+#: includes/media-metrics.php:53 includes/plugins-metrics.php:41
+#: includes/themes-metrics.php:31
+msgid "Name"
+msgstr "名称"
+
+#: includes/media-metrics.php:55
+msgid "Path"
+msgstr "路径"
+
+#: includes/plugins-metrics.php:37 wp-tech-metrics.php:58
+msgid "Plugins"
+msgstr "插件"
+
+#: includes/plugins-metrics.php:42 includes/themes-metrics.php:32
+msgid "Version"
+msgstr "版本"
+
+#: includes/plugins-metrics.php:43 includes/themes-metrics.php:33
+msgid "Status"
+msgstr "状态"
+
+#: includes/plugins-metrics.php:45
+msgid "Update Available"
+msgstr "有可用更新"
+
+#: includes/plugins-metrics.php:62
+msgid "Yes"
+msgstr "是"
+
+#: includes/plugins-metrics.php:62
+msgid "No"
+msgstr "否"
+
+#: includes/system-metrics.php:25
+msgid "System Information"
+msgstr "系统信息"
+
+#: includes/system-metrics.php:29
+msgid "Metric"
+msgstr "指标"
+
+#: includes/system-metrics.php:30
+msgid "Value"
+msgstr "值"
+
+#: includes/themes-metrics.php:27 wp-tech-metrics.php:57
+msgid "Themes"
+msgstr "主题"
+
+#: wp-tech-metrics.php:44 wp-tech-metrics.php:66
+msgid "WP Tech Metrics"
+msgstr "WP Tech Metrics"
+
+#: wp-tech-metrics.php:45
+msgid "Tech Metrics"
+msgstr "技术指标"
+
+#: wp-tech-metrics.php:61
+msgid "System"
+msgstr "系统"
+
+#: wp-tech-metrics.php:62
+msgid "Tools"
+msgstr "工具"
+
+#: wp-tech-metrics.php:67
+msgid "Technical metrics for your WordPress site are displayed below:"
+msgstr "以下显示了您的 WordPress 网站的技术指标："
+
+#: wp-tech-metrics.php:80
+msgid "Export All Metrics as CSV"
+msgstr "将所有指标导出为 CSV"
+
+#: wp-tech-metrics.php:81
+msgid "Use this tool to export all collected metrics into a single CSV file."
+msgstr "使用此工具将所有收集的指标导出为单个 CSV 文件。"
+
+#: wp-tech-metrics.php:83
+#, php-format
+msgid "Export %s as CSV"
+msgstr "将 %s 导出为 CSV"
+
+#: wp-tech-metrics.php:99
+msgid "Unauthorized user"
+msgstr "未经授权的用户"
+
+#: wp-tech-metrics.php:106
+msgid "Invalid export type"
+msgstr "无效的导出类型"

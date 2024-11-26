@@ -1,0 +1,155 @@
+# French translations for wp_tech_metrics package
+# This file is distributed under the same license as the wp-tech-metrics package.
+# Automatically generated, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: wp_tech_metrics 5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-11-26 16:40+0100\n"
+"PO-Revision-Date: 2024-11-26 16:40+0100\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: includes/database-metrics.php:30 wp-tech-metrics.php:60
+msgid "Database"
+msgstr "Base de données"
+
+#: includes/database-metrics.php:32
+#, php-format
+msgid "Total database size: <strong>%s</strong>"
+msgstr "Taille totale de la base de données : <strong>%s</strong>"
+
+#: includes/database-metrics.php:39
+msgid "Table Name"
+msgstr "Nom de la table"
+
+#: includes/database-metrics.php:40
+msgid "Rows"
+msgstr "Lignes"
+
+#: includes/database-metrics.php:41 includes/media-metrics.php:54
+#: includes/plugins-metrics.php:44 includes/themes-metrics.php:34
+msgid "Size"
+msgstr "Taille"
+
+#: includes/database-metrics.php:42 includes/themes-metrics.php:35
+msgid "Last Update"
+msgstr "Dernière mise à jour"
+
+#: includes/database-metrics.php:52
+msgid "N/A"
+msgstr "N/A"
+
+#: includes/media-metrics.php:38 wp-tech-metrics.php:59
+msgid "Media"
+msgstr "Médias"
+
+#: includes/media-metrics.php:40
+#, php-format
+msgid "Total uploads folder size: <strong>%s</strong>"
+msgstr "Taille totale du dossier des téléchargements : <strong>%s</strong>"
+
+#: includes/media-metrics.php:44
+#, php-format
+msgid "Total number of files: <strong>%d</strong>"
+msgstr "Nombre total de fichiers : <strong>%d</strong>"
+
+#: includes/media-metrics.php:49
+msgid "Largest Files"
+msgstr "Fichiers les plus volumineux"
+
+#: includes/media-metrics.php:53 includes/plugins-metrics.php:41
+#: includes/themes-metrics.php:31
+msgid "Name"
+msgstr "Nom"
+
+#: includes/media-metrics.php:55
+msgid "Path"
+msgstr "Chemin"
+
+#: includes/plugins-metrics.php:37 wp-tech-metrics.php:58
+msgid "Plugins"
+msgstr "Extensions"
+
+#: includes/plugins-metrics.php:42 includes/themes-metrics.php:32
+msgid "Version"
+msgstr "Version"
+
+#: includes/plugins-metrics.php:43 includes/themes-metrics.php:33
+msgid "Status"
+msgstr "Statut"
+
+#: includes/plugins-metrics.php:45
+msgid "Update Available"
+msgstr "Mise à jour disponible"
+
+#: includes/plugins-metrics.php:62
+msgid "Yes"
+msgstr "Oui"
+
+#: includes/plugins-metrics.php:62
+msgid "No"
+msgstr "Non"
+
+#: includes/system-metrics.php:25
+msgid "System Information"
+msgstr "Informations système"
+
+#: includes/system-metrics.php:29
+msgid "Metric"
+msgstr "Métrique"
+
+#: includes/system-metrics.php:30
+msgid "Value"
+msgstr "Valeur"
+
+#: includes/themes-metrics.php:27 wp-tech-metrics.php:57
+msgid "Themes"
+msgstr "Thèmes"
+
+#: wp-tech-metrics.php:44 wp-tech-metrics.php:66
+msgid "WP Tech Metrics"
+msgstr "WP Tech Metrics"
+
+#: wp-tech-metrics.php:45
+msgid "Tech Metrics"
+msgstr "Métriques techniques"
+
+#: wp-tech-metrics.php:61
+msgid "System"
+msgstr "Système"
+
+#: wp-tech-metrics.php:62
+msgid "Tools"
+msgstr "Outils"
+
+#: wp-tech-metrics.php:67
+msgid "Technical metrics for your WordPress site are displayed below:"
+msgstr "Les métriques techniques de votre site WordPress sont affichées ci-dessous :"
+
+#: wp-tech-metrics.php:80
+msgid "Export All Metrics as CSV"
+msgstr "Exporter toutes les métriques en CSV"
+
+#: wp-tech-metrics.php:81
+msgid "Use this tool to export all collected metrics into a single CSV file."
+msgstr "Utilisez cet outil pour exporter toutes les métriques collectées dans un seul fichier CSV."
+
+#: wp-tech-metrics.php:83
+#, php-format
+msgid "Export %s as CSV"
+msgstr "Exporter %s en CSV"
+
+#: wp-tech-metrics.php:99
+msgid "Unauthorized user"
+msgstr "Utilisateur non autorisé"
+
+#: wp-tech-metrics.php:106
+msgid "Invalid export type"
+msgstr "Type d'exportation invalide"
