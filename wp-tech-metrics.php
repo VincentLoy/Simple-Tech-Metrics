@@ -1,11 +1,15 @@
 <?php
 /*
 Plugin Name: WP Tech Metrics
-Description: A WordPress plugin to display technical metrics about your site.
+Plugin URI: https://github.com/VincentLoy/WP-Tech-Metrics
+Description: Basic insights to better understand your WordPress site.
 Version: 1.0.0
 Author: Vincent Loy
+Author URI: https://github.com/VincentLoy
 License: GPLv2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: wp-tech-metrics
+Domain Path: /languages
 */
 
 define('WP_TECH_METRICS_VERSION', '1.0.0');
