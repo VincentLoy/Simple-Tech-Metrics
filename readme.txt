@@ -8,7 +8,7 @@ Stable tag: 1.0.0
 License: GPLv2 or later  
 License URI: https://www.gnu.org/licenses/gpl-2.0.html  
 
-A WordPress plugin to display basics technical metrics about your site, including plugins, themes, media, database, and system information.
+A WordPress plugin to display detailed technical metrics about your site, including plugins, themes, media, database, and system information.
 
 == Description ==
 
