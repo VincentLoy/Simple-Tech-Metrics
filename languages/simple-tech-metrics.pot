@@ -1,12 +1,14 @@
-# Simple Tech Metrics TRANSLATION TEMPLATE FILE
+# SIMPLE TECH METRICS
+# Copyright (C) 2024 Simple Tech Metrics Contributors
 # This file is distributed under the same license as the Simple Tech Metrics package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: simple_tech_metrics \n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-26 16:40+0100\n"
+"Project-Id-Version: Simple Tech Metrics 1.0.0\n"
+"Report-Msgid-Bugs-To: support@example.com\n"
+"POT-Creation-Date: 2024-11-27 09:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,140 +17,140 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: includes/database-metrics.php:30 simple-tech-metrics.php:60
-msgid "Database"
-msgstr ""
-
-#: includes/database-metrics.php:32
-#, php-format
-msgid "Total database size: <strong>%s</strong>"
-msgstr ""
-
-#: includes/database-metrics.php:39
-msgid "Table Name"
-msgstr ""
-
-#: includes/database-metrics.php:40
-msgid "Rows"
-msgstr ""
-
-#: includes/database-metrics.php:41 includes/media-metrics.php:54
-#: includes/plugins-metrics.php:44 includes/themes-metrics.php:34
-msgid "Size"
-msgstr ""
-
-#: includes/database-metrics.php:42 includes/themes-metrics.php:35
-msgid "Last Update"
-msgstr ""
-
-#: includes/database-metrics.php:52
-msgid "N/A"
-msgstr ""
-
-#: includes/media-metrics.php:38 simple-tech-metrics.php:59
-msgid "Media"
-msgstr ""
-
-#: includes/media-metrics.php:40
-#, php-format
-msgid "Total uploads folder size: <strong>%s</strong>"
-msgstr ""
-
-#: includes/media-metrics.php:44
-#, php-format
-msgid "Total number of files: <strong>%d</strong>"
-msgstr ""
-
-#: includes/media-metrics.php:49
-msgid "Largest Files"
-msgstr ""
-
-#: includes/media-metrics.php:53 includes/plugins-metrics.php:41
-#: includes/themes-metrics.php:31
-msgid "Name"
-msgstr ""
-
-#: includes/media-metrics.php:55
-msgid "Path"
-msgstr ""
-
-#: includes/plugins-metrics.php:37 simple-tech-metrics.php:58
-msgid "Plugins"
-msgstr ""
-
-#: includes/plugins-metrics.php:42 includes/themes-metrics.php:32
-msgid "Version"
-msgstr ""
-
-#: includes/plugins-metrics.php:43 includes/themes-metrics.php:33
-msgid "Status"
-msgstr ""
-
-#: includes/plugins-metrics.php:45
-msgid "Update Available"
-msgstr ""
-
-#: includes/plugins-metrics.php:62
-msgid "Yes"
-msgstr ""
-
-#: includes/plugins-metrics.php:62
-msgid "No"
-msgstr ""
-
-#: includes/system-metrics.php:25
-msgid "System Information"
-msgstr ""
-
-#: includes/system-metrics.php:29
-msgid "Metric"
-msgstr ""
-
-#: includes/system-metrics.php:30
-msgid "Value"
-msgstr ""
-
-#: includes/themes-metrics.php:27 simple-tech-metrics.php:57
-msgid "Themes"
-msgstr ""
-
-#: simple-tech-metrics.php:44 simple-tech-metrics.php:66
+#: ../simple-tech-metrics.php:48 ../simple-tech-metrics.php:70
 msgid "Simple Tech Metrics"
 msgstr ""
 
-#: simple-tech-metrics.php:45
+#: ../simple-tech-metrics.php:49
 msgid "Tech Metrics"
 msgstr ""
 
-#: simple-tech-metrics.php:61
+#: ../simple-tech-metrics.php:61 ../includes/themes-metrics.php:27
+msgid "Themes"
+msgstr ""
+
+#: ../simple-tech-metrics.php:62 ../includes/plugins-metrics.php:37
+msgid "Plugins"
+msgstr ""
+
+#: ../simple-tech-metrics.php:63 ../includes/media-metrics.php:38
+msgid "Media"
+msgstr ""
+
+#: ../simple-tech-metrics.php:64 ../includes/database-metrics.php:30
+msgid "Database"
+msgstr ""
+
+#: ../simple-tech-metrics.php:65
 msgid "System"
 msgstr ""
 
-#: simple-tech-metrics.php:62
+#: ../simple-tech-metrics.php:66
 msgid "Tools"
 msgstr ""
 
-#: simple-tech-metrics.php:67
+#: ../simple-tech-metrics.php:71
 msgid "Technical metrics for your WordPress site are displayed below:"
 msgstr ""
 
-#: simple-tech-metrics.php:80
+#: ../simple-tech-metrics.php:84
 msgid "Export All Metrics as CSV"
 msgstr ""
 
-#: simple-tech-metrics.php:81
+#: ../simple-tech-metrics.php:85
 msgid "Use this tool to export all collected metrics into a single CSV file."
 msgstr ""
 
-#: simple-tech-metrics.php:83
+#: ../simple-tech-metrics.php:87
 #, php-format
 msgid "Export %s as CSV"
 msgstr ""
 
-#: simple-tech-metrics.php:99
+#: ../simple-tech-metrics.php:103
 msgid "Unauthorized user"
 msgstr ""
 
-#: simple-tech-metrics.php:106
+#: ../simple-tech-metrics.php:110
 msgid "Invalid export type"
+msgstr ""
+
+#: ../includes/database-metrics.php:32
+#, php-format
+msgid "Total database size: <strong>%s</strong>"
+msgstr ""
+
+#: ../includes/database-metrics.php:39
+msgid "Table Name"
+msgstr ""
+
+#: ../includes/database-metrics.php:40
+msgid "Rows"
+msgstr ""
+
+#: ../includes/database-metrics.php:41 ../includes/plugins-metrics.php:44
+#: ../includes/themes-metrics.php:34 ../includes/media-metrics.php:54
+msgid "Size"
+msgstr ""
+
+#: ../includes/database-metrics.php:42 ../includes/themes-metrics.php:35
+msgid "Last Update"
+msgstr ""
+
+#: ../includes/database-metrics.php:52
+msgid "N/A"
+msgstr ""
+
+#: ../includes/plugins-metrics.php:41 ../includes/themes-metrics.php:31
+#: ../includes/media-metrics.php:53
+msgid "Name"
+msgstr ""
+
+#: ../includes/plugins-metrics.php:42 ../includes/themes-metrics.php:32
+msgid "Version"
+msgstr ""
+
+#: ../includes/plugins-metrics.php:43 ../includes/themes-metrics.php:33
+msgid "Status"
+msgstr ""
+
+#: ../includes/plugins-metrics.php:45
+msgid "Update Available"
+msgstr ""
+
+#: ../includes/plugins-metrics.php:62
+msgid "Yes"
+msgstr ""
+
+#: ../includes/plugins-metrics.php:62
+msgid "No"
+msgstr ""
+
+#: ../includes/system-metrics.php:25
+msgid "System Information"
+msgstr ""
+
+#: ../includes/system-metrics.php:29
+msgid "Metric"
+msgstr ""
+
+#: ../includes/system-metrics.php:30
+msgid "Value"
+msgstr ""
+
+#: ../includes/media-metrics.php:40
+#, php-format
+msgid "Total uploads folder size: <strong>%s</strong>"
+msgstr ""
+
+#: ../includes/media-metrics.php:44
+#, php-format
+msgid "Total number of files: <strong>%d</strong>"
+msgstr ""
+
+#: ../includes/media-metrics.php:49
+msgid "Largest Files"
+msgstr ""
+
+#: ../includes/media-metrics.php:55
+msgid "Path"
 msgstr ""
