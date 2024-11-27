@@ -15,11 +15,11 @@
 }
 
 tr.active {
-    background: rgba(166, 250, 166, 0.5) !important;
+    background: rgba(166, 250, 166, 0.25) !important;
     font-weight: bold;
 }
 
 tr.warning {
-    background: rgba(248, 207, 131, 0.5) !important;
+    background: rgba(248, 207, 131, 0.25) !important;
     font-weight: bold;
 }
